@@ -4,3 +4,8 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
+clap = { version = "4.0", features = ["derive"] }   # CLI引数解析
+serde = { version = "1.0", features = ["derive"] }  # JSONシリアライゼーション
+serde_json = "1.0"                                  # JSONファイル操作
+chrono = { version = "0.4", features = ["serde"] }  # 日時処理
+anyhow = "1.0"                                      # エラーハンドリング 
