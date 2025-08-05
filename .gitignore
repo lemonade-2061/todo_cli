@@ -18,3 +18,7 @@ Thumbs.db
 # Environment
 .env
 .env.local
+
+# Data files
+todo.json
+*.json
