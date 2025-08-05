@@ -71,10 +71,11 @@ impl TodoList {
     }
 
     pub fn add_todo(&mut self, mut todo: Todo) -> u64 {
-        todo.id = self.next_id;
+        let id = self.next_id;
+        todo.id = id;
         self.todos.push(todo);
         self.next_id += 1;
-        todo.id
+        id
     }
 
     pub fn get_todo(&self, id: u64) -> Option<&Todo> {
